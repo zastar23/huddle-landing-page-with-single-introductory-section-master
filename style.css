@@ -8,5 +8,62 @@ html {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
-    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+
+body {
+    background-image: url(images/bg-mobile.svg);
+    background-size: cover;
+    background-color: var(--violet);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.header {
+    margin: 5rem 0;
+}
+
+.logo {
+    width: 12rem;
+}
+
+.mockup {
+    width: 100%;
+    margin-bottom: 4rem;
+}
+
+.info__section {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-family: 'Poppins';
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.text {
+    text-align: center;
+    color: #fff;
+    font-family: 'Open Sans';
+    font-size: .9rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    align-self: center;
+    padding: .6rem 4rem;
+    border-radius: 40px;
+    color: var(--violet);
 }
