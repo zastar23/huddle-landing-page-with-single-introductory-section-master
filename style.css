@@ -37,6 +37,7 @@ body {
 .mockup {
     width: 100%;
     margin-bottom: 4rem;
+    max-width: 40rem;
 }
 
 .info__section {
@@ -66,4 +67,68 @@ body {
     padding: .6rem 4rem;
     border-radius: 40px;
     color: var(--violet);
+    box-shadow: 1px 1px 1px  black;
+    outline: var(--violet);
+    font-size: .7rem;
 }
+
+.btn:hover {
+    background-color: var(--soft-magenta);
+    outline: var(--soft-magenta);
+    border: var(--soft-magenta);
+}
+
+.icons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 5rem;
+    color: white;
+    font-size: 1rem;
+    opacity: .7;
+}
+
+i {
+    padding: .4rem;
+    border: 2px solid white;
+    border-radius: 100%;
+}
+
+i:hover {
+    color: var(--soft-magenta);
+    border: 2px solid var(--soft-magenta);
+}
+
+@media(min-width: 1100px) {
+    body {
+        background-image: url(images/bg-desktop.svg);
+    }
+    .main {
+        display: flex;
+        gap: 4rem;
+    }
+
+    .info__section {
+        margin-top: 3rem;
+        width: 25rem;
+    }
+    .title {
+        text-align: left;
+        font-size: 2rem;
+    }
+
+    .text {
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    .btn {
+        align-self: start;
+        font-size: 1rem;
+    }
+
+    .icons {
+        align-self: end;
+    }
+}
+    
